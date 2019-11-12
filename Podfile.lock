@@ -1,0 +1,32 @@
+PODS:
+  - APExtensions/ViewState (7.0.1)
+  - DatePicker (1.0.1):
+    - Extended (~> 1.0.4)
+  - Extended (1.0.5)
+  - KeyboardAvoidingView (4.0.0):
+    - APExtensions/ViewState (>= 7.0.0)
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - DatePicker
+  - KeyboardAvoidingView (~> 4.0)
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - APExtensions
+    - DatePicker
+    - Extended
+    - KeyboardAvoidingView
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
+  DatePicker: adebbc11d7e198985f376e4943f844860bf019db
+  Extended: c463225e0c29b2823847866c1b106827772ac678
+  KeyboardAvoidingView: edbfcb705eb522dc080e42d082cb3b28f79f9879
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: 7885be1f7a4bf1097bdd4412ac7b68fe986149c3
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-TCTestProject-TCTestProjectUITests/Pods-TCTestProject-TCTestProjectUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/APExtensions/APExtensions.framework
+${BUILT_PRODUCTS_DIR}/DatePicker/DatePicker.framework
+${BUILT_PRODUCTS_DIR}/Extended/Extended.framework
+${BUILT_PRODUCTS_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
