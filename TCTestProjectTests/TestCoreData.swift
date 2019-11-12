@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import TestProject
 
 class TestCoreData: XCTestCase {
 
@@ -29,5 +30,30 @@ class TestCoreData: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    func testSaveUser() {
+        
+        let user = User(name: "TestName",
+                        lastname: "TestLastName",
+                        address: "TestAddress",
+                        postalcode: 100,
+                        town: "TestTown",
+                        birthday: Date(),
+                        profil: UIImage(named: "profile")?.pngData())
+        let result = DependancyInjectionCodeData.shared.saveUser(user: user)
+        XCTAssert(result, "Save user error")
+    }
+    
+    func testUpdateCars() {
+        let carEntity = CarEntity()
+        carEntity.make = "TestMake"
+        carEntity.model = "TestModel"
+        carEntity.equipments = nil
+        carEntity.picture = nil
+        let car = Car(carEntity: carEntity)
+        
+        let result = DependancyInjectionCodeData.shared.updateCars(cars: [car])
+        XCTAssert(result, "Save car error")
+    }
+    
 }

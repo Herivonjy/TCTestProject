@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TCTestProject
+@testable import TestProject
 
 class TCTestProjectTests: XCTestCase {
 

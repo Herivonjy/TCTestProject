@@ -6,7 +6,22 @@
 //  Copyright © 2019 Aina Herivonjy. All rights reserved.
 //
 
-import UIKit
+import CoreData
+
+@objc(CarEntity)
+public class CarEntity:NSManagedObject {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<CarEntity> {
+        return NSFetchRequest<CarEntity>(entityName: "CarEntity")
+    }
+
+    @NSManaged public var equipments: NSObject?
+    @NSManaged public var make: String?
+    @NSManaged public var model: String?
+    @NSManaged public var picture: String?
+    @NSManaged public var year: Int16
+    
+    
+}
 
 extension CarEntity {
     func update(car:Car) {
